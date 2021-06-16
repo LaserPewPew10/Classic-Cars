@@ -16,6 +16,7 @@ html {
 
 body {
   background-color: #ccc;
+  padding-right: 3rem;
 }
 
 /* End of Common Styles */
@@ -27,8 +28,12 @@ body {
   background-color: red;
   position: fixed;
   top: 2rem;
-  left: 15vw;
+  left: 2rem;
   z-index: 10;
+}
+
+.menu.change {
+  left: 15vw;
 }
 
 /* End of Menu */
@@ -40,11 +45,17 @@ body {
   background-color: #fff;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -15vw;
   display: flex;
   flex-direction: column;
   padding: 4rem 0 0 4rem;
+  z-index: 10;
 }
+
+.navbar.change {
+  left: 0;
+}
+
 /* End of Navbar */
 
 /* Common Section Styles */
@@ -58,10 +69,14 @@ section {
   height: 100vh;
   background-color: #efefef;
   position: relative;
-  left: 15vw;
+  left: 0;
   margin-bottom: 3rem;
-  transform: rotateY(10deg);
   transform-origin: left;
   box-shadow: 0.5rem 0.5rem 1rem #aaa;
+}
+
+.section.change {
+  left: 15vw;
+  transform: rotateY(10deg);
 }
 /* End of Common Section Styles */
